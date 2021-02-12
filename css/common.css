@@ -103,11 +103,15 @@ ul {
   display: flex;
 }
 
-.nav .item {
+.nav-l .item {
   margin-right: 50px;
 }
 
-.nav .item:last-child {
+.nav-l .item:first-child {
+  margin-left: 93px;
+}
+
+.nav-a .item {
   margin-right: 0;
 }
 
