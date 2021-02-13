@@ -5,6 +5,7 @@
 /* second background color #F5F4FA */
 /* hero background color #2F303A */
 /* accent color #2196F3 */
+/* card-set-gatp  30px */
 
 html {
   box-sizing: border-box;
@@ -40,10 +41,12 @@ body {
 /* ОБЩИЕ */
 
 .container {
+  width: 1200px;
+
   margin-right: auto;
   margin-left: auto;
+
   padding: 0 15px 0 15px;
-  width: 1200px;
 
   /* outline: 1px solid teal; */
 }
@@ -68,6 +71,22 @@ ul {
 
 .current {
   color: var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Логотип */
@@ -101,14 +120,12 @@ ul {
 
 .nav {
   display: flex;
+  margin-left: 93px;
+  padding-left: 0;
 }
 
 .nav-l .item {
   margin-right: 50px;
-}
-
-.nav-l .item:first-child {
-  margin-left: 93px;
 }
 
 .nav-a .item {

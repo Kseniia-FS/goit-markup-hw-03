@@ -6,28 +6,41 @@
   --secondary-text-color: #757575;
   --bgc-hero-footer: #2f303a;
   --font-family: 'Roboto';
+  --card-set-gap: 30px;
 }
 
 /* Наши проекты. Галерея */
 
 .gallery {
-  letter-spacing: 0.06em;
-  font-style: normal;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-right: 0;
+  margin-bottom: 94px;
+
+  padding-left: 0;
+  list-style: none;
 
   display: flex;
   flex-wrap: wrap;
 
-  /* outline: 1px solid teal; */
-
-  margin-left: -30px;
-  margin-right: 0;
-  margin-bottom: 94px;
-  margin-top: -30px;
-  list-style: none;
-  padding-left: 0;
+  letter-spacing: 0.06em;
+  font-style: normal;
 }
 
-.gallery-item > h2 {
+.gallery > .gallery-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+
+  /* outline: 1px solid orangered; */
+}
+
+.gallery-item > .title {
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 0;
+
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
@@ -35,12 +48,12 @@
   line-height: 2;
 
   color: var(--primary-text-color);
-  margin-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 0;
 }
 
-.gallery-item > p {
+.gallery-item > .text {
+  margin-left: 24px;
+  margin-top: 4px;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
@@ -48,19 +61,6 @@
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
-
-  margin-left: 24px;
-  margin-top: 4px;
-}
-
-.gallery-item {
-  flex-basis: calc(100% / 3-30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-right: 0;
-
-  /* outline: 1px solid orangered; */
 }
 
 /* Кнопки для галереи */

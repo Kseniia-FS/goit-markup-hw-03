@@ -1,15 +1,16 @@
 /* Герой */
 /* Уточнить цвет background color */
 .hero {
-  background-color: var(--bgc-hero-footer);
-
   height: 600px;
   text-align: center;
+  padding-top: 200px;
+
+  background-color: var(--bgc-hero-footer);
 }
 
 .hero-title {
-  padding-top: 200px;
   margin-top: 0;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -23,8 +24,6 @@
 /* Блок с преимуществами */
 
 .advantages {
-  /* outline: 1px solid teal; */
-
   display: flex;
 
   margin-left: auto;
@@ -33,7 +32,17 @@
   margin-bottom: 94px;
 }
 
-.adv-title {
+.card-set {
+  display: flex;
+  flex-flow: column;
+}
+
+.advantages .card-set + .card-set {
+  margin-left: 30px;
+}
+
+.card-set .adv-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -44,23 +53,12 @@
   color: var(--primary-text-color);
 }
 
-.advantages-text {
+.card-set .advantages-text {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 
   color: var(--secondary-text-color);
-}
-
-.card-set {
-  /* outline: 1px solid tomato; */
-
-  display: flex;
-  flex-flow: column;
-}
-
-.advantages .card-set + .card-set {
-  margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
@@ -70,13 +68,13 @@
 }
 
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
 
   text-align: center;
-
-  margin-bottom: 50px;
 }
 
 .link-block {
@@ -124,12 +122,17 @@
 }
 
 .name {
+  margin-top: 30px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
 }
 
 .name-p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
